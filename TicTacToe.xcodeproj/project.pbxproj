@@ -17,7 +17,19 @@
 		9DA41C712148DE1B001A3F45 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA41C702148DE1B001A3F45 /* BoardViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8023269B237339B600FEAD7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DA41C302148ABB4001A3F45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DA41C372148ABB4001A3F45;
+			remoteInfo = TicTacToe;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		80232696237339B600FEAD7F /* TicTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8023269A237339B600FEAD7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DA41C382148ABB4001A3F45 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA41C3B2148ABB5001A3F45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DA41C402148ABB5001A3F45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,6 +43,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		80232693237339B600FEAD7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DA41C352148ABB4001A3F45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +60,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80232697237339B600FEAD7F /* TicTacToeTests */ = {
+			isa = PBXGroup;
+			children = (
+				8023269A237339B600FEAD7F /* Info.plist */,
+			);
+			path = TicTacToeTests;
+			sourceTree = "<group>";
+		};
 		9DA41C2F2148ABB4001A3F45 = {
 			isa = PBXGroup;
 			children = (
 				9DA41C3A2148ABB4001A3F45 /* TicTacToe */,
+				80232697237339B600FEAD7F /* TicTacToeTests */,
 				9DA41C392148ABB4001A3F45 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				9DA41C382148ABB4001A3F45 /* TicTacToe.app */,
+				80232696237339B600FEAD7F /* TicTacToeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +113,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		80232695237339B600FEAD7F /* TicTacToeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8023269F237339B600FEAD7F /* Build configuration list for PBXNativeTarget "TicTacToeTests" */;
+			buildPhases = (
+				80232692237339B600FEAD7F /* Sources */,
+				80232693237339B600FEAD7F /* Frameworks */,
+				80232694237339B600FEAD7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8023269C237339B600FEAD7F /* PBXTargetDependency */,
+			);
+			name = TicTacToeTests;
+			productName = TicTacToeTests;
+			productReference = 80232696237339B600FEAD7F /* TicTacToeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		9DA41C372148ABB4001A3F45 /* TicTacToe */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DA41C4A2148ABB5001A3F45 /* Build configuration list for PBXNativeTarget "TicTacToe" */;
@@ -107,12 +154,17 @@
 		9DA41C302148ABB4001A3F45 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Lambda School";
 				TargetAttributes = {
+					80232695237339B600FEAD7F = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 9DA41C372148ABB4001A3F45;
+					};
 					9DA41C372148ABB4001A3F45 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -130,11 +182,19 @@
 			projectRoot = "";
 			targets = (
 				9DA41C372148ABB4001A3F45 /* TicTacToe */,
+				80232695237339B600FEAD7F /* TicTacToeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		80232694237339B600FEAD7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DA41C362148ABB4001A3F45 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,6 +208,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		80232692237339B600FEAD7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DA41C342148ABB4001A3F45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -161,6 +228,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8023269C237339B600FEAD7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DA41C372148ABB4001A3F45 /* TicTacToe */;
+			targetProxy = 8023269B237339B600FEAD7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9DA41C3F2148ABB5001A3F45 /* Main.storyboard */ = {
@@ -182,6 +257,49 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8023269D237339B600FEAD7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TicTacToeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.TicTacToeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicTacToe.app/TicTacToe";
+			};
+			name = Debug;
+		};
+		8023269E237339B600FEAD7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TicTacToeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.TicTacToeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicTacToe.app/TicTacToe";
+			};
+			name = Release;
+		};
 		9DA41C482148ABB5001A3F45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -309,7 +427,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.TicTacToe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -327,7 +445,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.TicTacToe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -335,6 +453,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8023269F237339B600FEAD7F /* Build configuration list for PBXNativeTarget "TicTacToeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8023269D237339B600FEAD7F /* Debug */,
+				8023269E237339B600FEAD7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9DA41C332148ABB4001A3F45 /* Build configuration list for PBXProject "TicTacToe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

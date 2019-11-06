@@ -35,7 +35,7 @@ struct GameBoard {
     
     subscript(coordinate: Coordinate) -> Mark? {
         let square = squares[arrayIndex(for: coordinate)]
-        if case let Square.filled(mark) = square {
+        if case let Square.filled(mark) = square { //Gets a value out of a case enumeration
             return mark
         } else {
             return nil
